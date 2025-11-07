@@ -1,0 +1,54 @@
+% určuje sablonu dokumentu
+\documentclass{socthesis}
+% načte data, která jste zapsali do souboru userdata.tex
+\input{userdata}
+
+% nastaví soubor se seznamem literatury ve formátu .bib
+\addbibresource{literatura.bib}
+
+
+% Začátek dokumentu - vše potom bude mezi \begin{document} a \end{document} a zobrazí se v konečném PDF
+\begin{document}
+
+% Titulní strana(y)
+\maketitle
+
+% Prohlášení
+\MakeDeclaration
+
+% Poděkování
+\ThanksPage
+
+% Anotace & klíčová slova
+\AbstractsPage
+
+% Generovaný obsah
+\tableofcontents
+\newpage
+
+% --- Začátek práce ---
+\chapter{Úvod}
+\input{parts/00uvod}
+
+\chapter{Teoretická část}
+\input{parts/T01_zaklady}
+\input{parts/T02_soubory}
+
+\chapter{Praktická část}
+\input{parts/P01_tabulky_obrazky}
+\input{parts/P02_citace}
+
+\chapter{Závěr}
+\input{parts/99zaver}
+
+% --- Bibliografie a seznamy po práci ---
+\printbibliography[title={Použitá literatura}]
+\listoffigures
+\listoftables
+
+% --- Přílohy (volitelné) - lze zakomentovat pomocí % (znaku procento) ---
+\appendix
+\input{parts/append/A01_Priloha.tex}
+
+
+\end{document}

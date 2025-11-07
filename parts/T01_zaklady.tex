@@ -1,0 +1,61 @@
+\section{Princip \LaTeX u}
+\LaTeX\ je systém pro přípravu dokumentů, který umožňuje oddělit obsah dokumentu od jeho formátování. Uživatel píše text a strukturu dokumentu pomocí značek a příkazů, zatímco \LaTeX\ se stará o jeho správné naformátování podle předem definovaných pravidel a stylů. Tento přístup umožňuje snadnou tvorbu profesionálně vypadajících dokumentů, zejména těch, které obsahují složité prvky jako jsou matematické rovnice, tabulky nebo obrázky.
+
+\subsection{Šablona}
+V této šabloně je přednastaveno základní formátování dokumentu pro seminární práce na Gymnáziu Kladno a pro práce v rámci SOČ.
+
+V souboru \texttt{userdata.tex} se jistě velmi rychle zorientujete. Nastavíte zde, zda pracujete na seminární práci nebo na práci v rámci SOČ a také, zda aktuální verze je verzí pracovní, nebo verzí finální pro odevzdání.
+Dále zde nastavíte název práce, jméno autora/autorů, vedoucího práce, rok odevzdání a také anotaci práce v češtině a angličtině. Všechny tyto údaje se následně automaticky doplní na titulní stranu.
+
+V běžném textu využijete nejčastěji následující prvky:
+
+\subsection{Odstavce}
+
+Jednotlivé odstavce se píšou jako samostatné bloky textu oddělené prázdným řádkem. Obvykle dokonce jako pouze jeden řádek, na kterém bude mnoho jednotlivých vět.
+Pokud mezi řádky ve vstupním textu nebude žádný prázdný řádek, \LaTeX\ je spojí do jednoho odstavce, jako je tento příklad s předchozí a touto větou (řádky ve vstupním souboru).
+
+Pokud mezi řádky ve vstupním textu necháte volný řádek, \LaTeX\ to interpretuje jako konec odstavce a začne nový odstavec, jako je tento příklad (tento odstavec, který právě čtete). Povšimněte si automatického odsazení prvního řádku nového odstavce.
+
+\subsection{Části práce a základní formátování textu}
+V dokumentu můžete pomocí označení vytvářet kapitoly \texttt{\textbackslash chapter\{\}}, podkapitoly \texttt{\textbackslash section\{\}}, podpodkapitoly \texttt{\textbackslash subsection\{\}}. Tyto příkazy automaticky číslují části dokumentu a vytvářejí obsah (pokud vložíte příkaz pro jeho generování - podrobnosti \ref{sec:generovane_obsahy}).
+
+Podobně lze také formátovat text pomocí příkazů pro \textbf{tučný text} \texttt{\textbackslash textbf\{\}}, \textit{kurzívu} \texttt{\textbackslash textit\{\}}, \underline{podtržený text} \texttt{\textbackslash underline\{\}} a \texttt{monospace (strojopisný) text} \texttt{\textbackslash texttt\{\}}. Jistě se vám budou také hodit uvozovky \uv{pro citace} pomocí příkazu \texttt{\textbackslash uv\{\}}. 
+
+Trochu jinak lze formátovat text také pomocí prostředí \texttt{verbatim}, které zachovává všechny mezery a zalomení řádků přesně tak, jak jsou ve zdrojovém textu napsány. Takové prostředí začíná značkou \texttt{\textbackslash begin\{verbatim\}} a končí značkou \texttt{\textbackslash end\{verbatim\}}. Cokoliv mezi těmito dvěma příkazy bude zobrazeno přesně tak, jak je napsáno, včetně mezer a nových řádků.
+\begin{verbatim}
+To je užitečné
+  pro ukázky kódu
+
+    nebo jiný text,
+      kde je důležité
+  
+        přesné formátování.
+\end{verbatim}
+
+Podobně lze vytvářet seznamy i seznamy v seznamech a seznamy v seznamech v seznamech.
+\begin{itemize}
+  \item Lze vytvářet
+  \item nečíslované seznamy
+  \begin{itemize}
+    \item které automaticky mění odrážky pro vnořené seznamy
+      \item jak se seznamy dělají se podívejte do zdrojového souboru
+      \item nebo do tutoriálu k \LaTeX u na \href{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes}{Overleaf}
+  \end{itemize}
+  \item také lze vytvářet
+  \item číslované seznamy
+  \begin{enumerate}
+    \item které automaticky číslují položky
+    \item a také
+    \begin{enumerate}
+      \item mění číslování
+      \item pro vnořené seznamy
+    \end{enumerate}
+    \item ale moc to se seznamy nepřehánějte
+    \item obvykle jsou méně přehledné
+    \item než si myslíte
+  \end{enumerate}
+\end{itemize}
+
+\paragraph{Odstavec}
+Pojemnovat si dokonce můžete i odstavec :-)
+

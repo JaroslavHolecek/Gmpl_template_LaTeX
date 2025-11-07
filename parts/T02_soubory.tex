@@ -1,0 +1,20 @@
+\section{Rozdělení do souborů}
+Až bude mít vaše práce více kapitol a podkapitol a celkově bude rozsáhlá, je vhodné ji rozdělit do více samostatných souborů. To usnadní orientaci v textu a jeho úpravy. V této šabloně jsou jednotlivé části práce rozděleny do samostatných souborů v adresáři \texttt{parts/}.
+
+Hlavní soubor \texttt{main.tex} obsahuje pouze základní nastavení dokumentu a příkazy pro zahrnutí jednotlivých částí práce pomocí příkazů \texttt{\textbackslash input\{\}}. Tím lze snadno přidávat a odebírat jednotlivé části práce bez nutnosti pracovat s jedním velkým souborem.
+
+Můžete také velmi snadno měnit pořadí kapitol nebo přidávat nové kapitoly tím, že upravíte pouze hlavní soubor \texttt{main.tex}.
+
+Novou kapitolu přidáte jednoduše tak, že vytvoříte nový soubor v adresáři \texttt{parts/}, například \texttt{03T\_nova\_kapitola.tex}, a poté jej zahrnete do hlavního souboru \texttt{main.tex} pomocí příkazu:
+\begin{verbatim}
+\input{parts/03T_nova_kapitola}
+\end{verbatim}
+na místě mezi ostatními kapitolami.
+
+\subsection{Komentáře}
+Velmi užitečnou vlastností LaTeXu je možnost vkládat do zdrojového textu komentáře, které nejsou v konečném dokumentu zobrazeny. Komentář začíná znakem procento \% a pokračuje až do konce řádku. Tento znak můžete použít k dočasnému zakomentování částí textu nebo k přidání poznámek pro sebe nebo ostatní, kteří budou s dokumentem pracovat. Například:
+\begin{verbatim}
+% Možná budu chtít použít tuto verzi věty.
+Nebo se mi více líbí tato verze věty.
+\end{verbatim}
+V tomto příkladu bude v konečném dokumentu zobrazena pouze druhá věta, zatímco první věta bude ignorována jako komentář - pouhým přepsáním znaku procento \% můžete \uv{přehazovat} mezi jednotlivými formulacemi.
