@@ -5,6 +5,7 @@
 !SOC_pracovni.pdf
 
 # Ignore LaTeX temporary files
+main-blx.bib
 *.aux
 *.log
 *.out
@@ -24,3 +25,5 @@
 *.fignums
 *.tikztemp
 *.auxlock
+*.lof
+*.lot
