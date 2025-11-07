@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{socthesis}[2025/10/29 Class for SOČ and Seminar papers (CZ)]
+\ProvidesClass{sablona/socthesis}[2025/10/29 Class for SOČ and Seminar papers (CZ)]
 
 \LoadClass[12pt, a4paper, oneside]{book}
 
@@ -305,7 +305,7 @@
   \vspace{6mm}
   \begin{center}
     % logo školy – PNG vedle .cls
-    \IfFileExists{img/logo_skoly.png}{\includegraphics[width=0.35\textwidth]{img/logo_skoly.png}}{}
+    \IfFileExists{sablona/logo_skoly.png}{\includegraphics[width=0.35\textwidth]{sablona/logo_skoly.png}}{}
   \end{center}
 
   \vfill

@@ -1,9 +1,9 @@
 V odborných pracích se často používají tabulky a obrázky k lepšímu znázornění dat a informací. Pokud je vložíme správně, vytvoří nám \LaTeX na základě těchto prvků i jejich automatické seznamy.
 
 \section{Tabulky}
-Tabulky se vkládají pomocí prostředí \texttt{table} a \texttt{tabular}. Prostředí \texttt{table} slouží k umístění tabulky do dokumentu a umožňuje přidat popisek a označení pro referencování. Prostředí \texttt{tabular} pak definuje samotnou strukturu tabulky, včetně počtu sloupců a jejich zarovnání.
+Tabulky se vkládají pomocí prostředí \texttt{table} a \texttt{tabular}. Prostředí \texttt{table} slouží k umístění tabulky do dokumentu a umožňuje přidat popisek a označení pro odkazování. Prostředí \texttt{tabular} pak definuje samotnou strukturu tabulky, včetně počtu sloupců a jejich zarovnání.
 
-Pro vytvoření tabylky doporučuji nástroj jako je \href{https://www.tablesgenerator.com/}{Tables Generator}\footnote{Dostupné online na https://www.tablesgenerator.com/}, který umožňuje snadno vytvářet tabulky a generovat odpovídající \LaTeX kód.
+Pro vytvoření tabulky doporučuji nástroj jako je \href{https://www.tablesgenerator.com/}{Tables Generator}\footnote{Dostupné online na https://www.tablesgenerator.com/}, který umožňuje snadno vytvářet tabulky a generovat odpovídající \LaTeX kód.
 
 \begin{table}[h!]
   \centering
@@ -18,10 +18,10 @@ Pro vytvoření tabylky doporučuji nástroj jako je \href{https://www.tablesgen
   \caption{Ukázková tabulka}
   \label{tab:ukazkova_tabulka}
 \end{table}
-Tabulku můžeme v textu odkázat pomocí příkazu \verb|\ref{tab:ukazkova_tabulka}|, který vytvoří odkaz na číslo tabulky: \ref{tab:ukazkova_tabulka}.
+Tabulku můžeme v textu odkázat pomocí příkazu \verb|\ref{klíč}|, který vytvoří odkaz na číslo tabulky: \ref{tab:ukazkova_tabulka}.
 
 \section{Obrázky}
-Obrázky se vkládají pomocí prostředí \texttt{figure}. Toto prostředí umožňuje přidat obrázek do dokumentu, přidat popisek a označení pro referencování. Obrázky se obvykle vkládají pomocí příkazu \verb|\includegraphics|, který načte obrázek z externího souboru - cesta k tomuto souboru se zapisuje vzhledem k souboru, ve kterém obrázek používáte. Pokud chcete \uv{o adresář výše}, zapisujete \texttt{../}. Můžete také nastavit velikost obrázku pomocí parametrů jako \texttt{width} nebo \texttt{height} - obvykle vzhledem k šířce textu \texttt{0.6\textbackslash textwidth}.
+Obrázky se vkládají pomocí prostředí \texttt{figure}. Toto prostředí umožňuje přidat obrázek do dokumentu, přidat popisek a označení pro odkazování. Obrázky se obvykle vkládají pomocí příkazu \verb|\includegraphics|, který načte obrázek z externího souboru - cesta k tomuto souboru se zapisuje vzhledem k souboru, ve kterém obrázek používáte (pokud vkládáte do souboru \texttt{main.tex} soubor pomocí \texttt{input}, potom je vlastně obrázek vložený v souboru \texttt{main.tex} a tedy musí být jeho cesta vzhledem k souboru \texttt{main.tex} ). Pokud chcete \uv{o adresář výše}, zapisujete \texttt{../}. Můžete také nastavit velikost obrázku pomocí parametrů jako \texttt{width} nebo \texttt{height} - obvykle vzhledem k šířce textu \texttt{0.6\textbackslash textwidth}.
 
 \begin{figure}[h!]
   \centering
@@ -41,7 +41,7 @@ Obrázky se vkládají pomocí prostředí \texttt{figure}. Toto prostředí umo
     \hfill
     \begin{minipage}{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{img/logo_skoly.png}
+        \includegraphics[width=\textwidth]{img/logo_skoly_vyrocni.png}
         \caption{sebe}
         \label{fig:obrazek2}
     \end{minipage}
@@ -56,12 +56,12 @@ Obrázky se vkládají pomocí prostředí \texttt{figure}. Toto prostředí umo
     \hfill
     \begin{minipage}{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{img/logo_skoly.png}
+        \includegraphics[width=\textwidth]{img/logo_skoly_vyrocni.png}
     \end{minipage}
     \caption{Popisek pro oba obrázky zároveň}
 \end{figure}
 
-Obrázek můžeme v textu odkázat pomocí příkazu \verb|\ref{fig:ukazkovy_obrazek}|, který vytvoří odkaz na číslo obrázku: \ref{fig:ukazkovy_obrazek}.
+Obrázek můžeme v textu odkázat pomocí příkazu \verb|\ref{klíč}|, který vytvoří odkaz na číslo obrázku: \ref{fig:ukazkovy_obrazek}.
 
 
 \section{Rovnice}
@@ -93,7 +93,7 @@ f(x) &= x^2 + 2x + 1 \\
 Pro další informace neváhejte využít například \href{https://www.overleaf.com/learn/latex/mathematical_expressions}{tutoriál na Overleaf} nebo jiný zdroj o psaní matematiky v \LaTeX u. V současné době je také mocným pomocníkem LLM, které umí generovat \LaTeX kód pro matematické výrazy na základě textového popisu.
 
 \section{Ukázka kódu}
-Možná se vám stane, že budete chtít vložit ukázku programovacího jazyka. Ktomu slouží prostředí \texttt{lstlisting}.
+Možná se vám stane, že budete chtít vložit ukázku programovacího jazyku. K tomu slouží prostředí \texttt{lstlisting}.
 
 \begin{lstlisting}[language=Python, caption={Krátký Python kód}]
 for i in range(5):

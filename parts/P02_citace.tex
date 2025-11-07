@@ -1,12 +1,12 @@
 \section{Citace, bibliografie a odkazy}
-Pro citace v textu a tvorbu bibliografie se používá balíček \texttt{biblatex}, který je již načten v šabloně. Citace se vkládají pomocí příkazu \verb|\cite{klíč}|, kde \texttt{klíč} je identifikátor záznamu v souboru \texttt{literatura.bib}. Například citace knihy v textu může vypadat takto \cite{Sturma1} a \cite{Malina1}.
+Pro citace v textu a tvorbu bibliografie se používá balíček \texttt{biblatex}, který je již načten v šabloně. Citace se vkládají pomocí příkazu \verb|\cite{klíč}|, kde \texttt{klíč} je identifikátor záznamu v souboru \texttt{literatura.bib}. Například citace knihy v textu může vypadat takto \cite{Sturma1} a \cite{Malina1}. V textu obvykle citaci začleníme do věty: Dle \cite{Sturma1} je \dots apod.
 
 Do souboru \texttt{literatura.bib} zapíšete záznamy ve formátu BibTeX pro veškerou literaturu a další zdroje, které jste přečetli. V textu poté odkazujete na tyto záznamy pomocí \verb|\cite{klíč}|. Ve výsledném seznamu literatury se objeví pouze ty záznamy, které jste ve vaší praci citovali a automaticky se formátují podle zvoleného stylu. V souboru \texttt{literatura.bib} tedy můžete bez problému mít i záznamy, které nakonec ve vaší práci nepoužijete.
 
 Jaké všechny informace je potřeba vyplnit pro váš typ dokumentu se můžete dočíst v normě ČSN ISO 690 \href{https://www.citace.com/CSN-ISO-690.pdf}{https://www.citace.com/CSN-ISO-690.pdf}.
 
 \subsection{Reference v rámci práce}
-V \LaTeX u můžete také vytvářet odkazy na různé části vaší práce, jako jsou kapitoly, obrázky, tabulky nebo rovnice. K tomu slouží příkazy \verb|\label{klíč}| a \verb|\ref{klíč}|. Pomocí \verb|\label{klíč}| označíte místo, na které chcete odkazovat, a pomocí \verb|\ref{klíč}| vytvoříte odkaz na toto místo. Například, pokud chcete odkazovat na obrázek \ref{fig:ukazkovy_obrazek} a bude to vypadat takto. V elektronické verzi PDF na tento odkaz můžete kliknout a budete přesměrováni na daný obrázek (respektive na stránku s daným obrázkem).
+V \LaTeX u můžete také vytvářet odkazy na různé části vaší práce, jako jsou kapitoly, obrázky, tabulky nebo rovnice. K tomu slouží příkazy \verb|\label{klíč}| a \verb|\ref{klíč}|. Pomocí \verb|\label{klíč}| označíte místo, na které chcete odkazovat, a pomocí \verb|\ref{klíč}| vytvoříte odkaz na toto místo. Například, pokud chcete odkazovat na obrázek \ref{fig:ukazkovy_obrazek},bude odkaz vypadat takto. V elektronické verzi PDF na tento odkaz můžete kliknout a budete přesměrováni na daný obrázek (respektive na stránku s daným obrázkem).
 
 
 \section{Poznámky pod čarou}
@@ -15,4 +15,10 @@ Poznámka pod čarou se vloží takto\footnote{Toto je ukázková poznámka, kte
 
 \section{Generované obsahy}
 \label{sec:generovane_obsahy}
-V \LaTeX u lze generovat různé obsahy, jako je obsah kapitol, seznam obrázků nebo tabulek. Tyto obsahy se vytvářejí pomocí příkazů jako \verb|\tableofcontents|, \verb|\listoffigures|, \verb|\listoftables| a podobně. Tyto příkazy vložíte na místo, kde chcete, aby se obsah objevil, a \LaTeX\ automaticky vytvoří odpovídající seznamy na základě označení a struktur vašeho dokumentu.
+V \LaTeX u lze generovat různé obsahy, jako je obsah kapitol, seznam obrázků nebo tabulek. Tyto obsahy se vytvářejí pomocí příkazů jako
+\begin{description}
+  \item \verb|\tableofcontents| - generuje obsah kapitol
+  \item \verb|\listoffigures| - generuje seznam obrázků
+  \item \verb|\listoftables| - generuje seznam tabulek
+\end{description}
+Tyto příkazy vložíte na místo, kde chcete, aby se obsah objevil, a \LaTeX\ automaticky vytvoří odpovídající seznamy na základě označení a struktur vašeho dokumentu.

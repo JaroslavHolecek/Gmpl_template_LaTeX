@@ -17,12 +17,20 @@ Pokud mezi řádky ve vstupním textu nebude žádný prázdný řádek, \LaTeX\
 Pokud mezi řádky ve vstupním textu necháte volný řádek, \LaTeX\ to interpretuje jako konec odstavce a začne nový odstavec, jako je tento příklad (tento odstavec, který právě čtete). Povšimněte si automatického odsazení prvního řádku nového odstavce.
 
 \subsection{Části práce a základní formátování textu}
-V dokumentu můžete pomocí označení vytvářet kapitoly \texttt{\textbackslash chapter\{\}}, podkapitoly \texttt{\textbackslash section\{\}}, podpodkapitoly \texttt{\textbackslash subsection\{\}}. Tyto příkazy automaticky číslují části dokumentu a vytvářejí obsah (pokud vložíte příkaz pro jeho generování - podrobnosti \ref{sec:generovane_obsahy}).
+V dokumentu můžete pomocí označení vytvářet kapitoly \texttt{\textbackslash chapter\{\}}, podkapitoly \texttt{\textbackslash section\{\}}, podpodkapitoly \texttt{\textbackslash subsection\{\}}. Tyto příkazy automaticky číslují části dokumentu a vytvářejí obsah (pokud vložíte příkaz pro jeho generování - podrobnosti v kapitole \ref{sec:generovane_obsahy}).
 
-Podobně lze také formátovat text pomocí příkazů pro \textbf{tučný text} \texttt{\textbackslash textbf\{\}}, \textit{kurzívu} \texttt{\textbackslash textit\{\}}, \underline{podtržený text} \texttt{\textbackslash underline\{\}} a \texttt{monospace (strojopisný) text} \texttt{\textbackslash texttt\{\}}. Jistě se vám budou také hodit uvozovky \uv{pro citace} pomocí příkazu \texttt{\textbackslash uv\{\}}. 
+Podobně lze také formátovat text pomocí příkazů pro:
+
+\begin{description}
+  \item \verb|\textbf{}| — \textbf{tučný text}
+  \item \verb|\textit{}| — \textit{kurzívu}
+  \item \verb|\underline{}| — \underline{podtržený text}
+  \item \verb|\texttt{}| — \texttt{monospace (strojopisný) text}
+  \item \verb|\uv{}| — uvozovky \uv{pro citace}
+\end{description}
 
 Trochu jinak lze formátovat text také pomocí prostředí \texttt{verbatim}, které zachovává všechny mezery a zalomení řádků přesně tak, jak jsou ve zdrojovém textu napsány. Takové prostředí začíná značkou \texttt{\textbackslash begin\{verbatim\}} a končí značkou \texttt{\textbackslash end\{verbatim\}}. Cokoliv mezi těmito dvěma příkazy bude zobrazeno přesně tak, jak je napsáno, včetně mezer a nových řádků.
-\begin{verbatim}
+\begin{verbatim}  
 To je užitečné
   pro ukázky kódu
 
@@ -57,5 +65,5 @@ Podobně lze vytvářet seznamy i seznamy v seznamech a seznamy v seznamech v se
 \end{itemize}
 
 \paragraph{Odstavec}
-Pojemnovat si dokonce můžete i odstavec :-)
+Pojmenovat si dokonce můžete i odstavec :-)
 
