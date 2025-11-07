@@ -1,0 +1,26 @@
+# Ignore all PDF files
+*.pdf
+# But don't ignore these specific PDFs
+!Seminar_finalni.pdf
+!SOC_pracovni.pdf
+
+# Ignore LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.figlist
+*.makefile
+*.fignums
+*.tikztemp
+*.auxlock
