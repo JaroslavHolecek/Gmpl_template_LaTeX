@@ -10,7 +10,7 @@
 - finální v čisté podobě
 
 ## Použití
-- Stáhni šablonu (složku/projekt se všemi soubory) zde [GitHub](https://github.com/JaroslavHolecek/Gmpl_template_LaTeX) nebo ji rovnou použij na [Overleaf](https://www.overleaf.com/read/wxscbbtqfjpd#863c9f)
+- Stáhni šablonu (složku/projekt se všemi soubory) zde [GitHub](https://github.com/JaroslavHolecek/Gmpl_template_LaTeX) (Zelené tlačítko Code -> Download .zip) nebo ji rovnou použij na [Overleaf](https://www.overleaf.com/read/wxscbbtqfjpd#863c9f)
 - **Nezasahuj** do ničeho ve složce `sablona`, pokud si nejsi jistá co děláš.
 - Přečti si jeden z PDF souborů, nebo ten, který se vygeneruje automaticky (všechny jsou stejné až na titulní stranu) - v textu najdeš užitečné informace a ukázky jak se používá LaTeX
 - V souboru `userdata.tex` vyplň na jakém typu práce pracuješ (`soc` nebo `seminar`) a zda je to zatím pracovní verze nebo verze k odevzdání (`work` nebo `final`)
